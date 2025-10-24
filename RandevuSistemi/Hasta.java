@@ -2,17 +2,17 @@ package RandevuSistemi;
 
 /**
  * Hasta sınıfı, randevu takip sistemindeki her hastanın temel verilerini (data model) tutar.
- * Değişkenler: hastaID [cite: 39], adSoyad [cite: 39], randevuTarihi[cite: 39].
+ * Değişkenler: hastaID ,adSoyad ,randevuTarihi.
  */
 public class Hasta {
     // Değişkenler
-    private int hastaID;          // Hastanın benzersiz kimlik numarası (int) [cite: 39]
-    private String adSoyad;       // Hastanın adı ve soyadı (String) [cite: 39]
-    private String randevuTarihi; // Hastanın randevu tarihi (String, örn: "25.10.2025") [cite: 39]
+    private int hastaID;          // Hastanın benzersiz kimlik numarası (int)
+    private String adSoyad;       // Hastanın adı ve soyadı (String)
+    private String randevuTarihi; // Hastanın randevu tarihi (String, örn: "25.10.2025")
 
     /**
      * Hasta sınıfının Yapıcı Metodu (Constructor).
-     * Bu üç değişkeni parametre olarak alıp atamalıdır[cite: 42].
+     * Bu üç değişkeni parametre olarak alıp atamalıdır.
      *
      * @param hastaID Benzersiz hasta kimliği.
      * @param adSoyad Hastanın adı ve soyadı.
@@ -25,7 +25,7 @@ public class Hasta {
     }
 
     /**
-     * Hastanın ID, Ad Soyad ve Randevu Tarihi bilgilerini ekrana yazdırır[cite: 43].
+     * Hastanın ID, Ad Soyad ve Randevu Tarihi bilgilerini ekrana yazdırır.
      * Konsol çıktısında anlaşılır bir formatta görüntüleme sağlar.
      */
     public void bilgileriGoster() {

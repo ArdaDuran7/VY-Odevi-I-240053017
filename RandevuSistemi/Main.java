@@ -9,10 +9,10 @@ public class Main {
         RandevuListesi liste = new RandevuListesi();
 
         // Örnek Hasta nesneleri oluşturulur.
-        Hasta h1 = new Hasta(101, "Ali Yılmaz", "26.10.2025");
-        Hasta h2 = new Hasta(102, "Ayşe Kaya", "27.10.2025");
-        Hasta h3 = new Hasta(103, "Mehmet Öztürk", "28.10.2025");
-        Hasta h4 = new Hasta(201, "Gizem Demirci", "24.10.2025"); // Acil Durum hastası
+        Hasta h1 = new Hasta(101, "Arda Külahlı", "26.10.2025");
+        Hasta h2 = new Hasta(102, "Muhammed Çetiner", "27.10.2025");
+        Hasta h3 = new Hasta(103, "Fatih Konak", "28.10.2025");
+        Hasta h4 = new Hasta(201, "Sıla Bozkurt", "24.10.2025"); // Acil Durum hastası
 
         // --- 1. Ekleme İşlemleri ---
         System.out.println("--- EKLEME İŞLEMLERİ ---");

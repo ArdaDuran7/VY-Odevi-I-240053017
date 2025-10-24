@@ -34,7 +34,7 @@ public class RandevuListesi {
         // Böylece yeni düğüm listenin ilk elemanı olur.
         head = yeniNode;
 
-        System.out.println("[ACİL EKLEME] Hasta ID: " + hasta.getHastaID() + " listenin BAŞINA eklendi.");
+        System.out.println("[ACİL VAKA] Hasta ID: " + hasta.getHastaID() + " listede Öncelik Verildi.");
     }
 
     /**
@@ -50,7 +50,7 @@ public class RandevuListesi {
         // Liste boşsa (head null ise), yeni düğüm head olur.
         if (head == null) {
             head = yeniNode;
-            System.out.println("[NORMAL EKLEME] Hasta ID: " + hasta.getHastaID() + " listenin ilk elemanı olarak eklendi.");
+            System.out.println("[NORMAL VAKA] Hasta ID: " + hasta.getHastaID() + " listenin İLK hastası olarak eklendi.");
             return;
         }
 
@@ -63,7 +63,7 @@ public class RandevuListesi {
 
         // Son düğüm bulunduğunda, onun 'sonraki' referansı yeni düğümü gösterecek şekilde ayarlanır.
         mevcut.sonraki = yeniNode;
-        System.out.println("[NORMAL EKLEME] Hasta ID: " + hasta.getHastaID() + " listenin SONUNA eklendi.");
+        System.out.println("[NORMAL VAKA] Hasta ID: " + hasta.getHastaID() + " listenin SONUNA eklendi.");
     }
 
     /**
@@ -125,7 +125,7 @@ public class RandevuListesi {
         }
         // 4. Durum: Eğer mevcut null ise (yani aranan hasta bulunamadı)
         else {
-            System.out.println("\n[İPTAL BAŞARISIZ] Hasta bulunamadı. Hasta ID: " + hastaID + " listede yok.");
+            System.out.println("\n[İPTAL BAŞARISIZ] Hasta bulunamadı. Hasta ID: " + hastaID + " listede bulunamadı.");
         }
     }
 
@@ -139,7 +139,7 @@ public class RandevuListesi {
 
         // Liste boşsa mesaj verir.
         if (head == null) {
-            System.out.println("Randevu listesi boş.");
+            System.out.println("Randevu listesinde hasta bulunamadı.");
             return;
         }
 
